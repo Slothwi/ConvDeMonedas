@@ -35,12 +35,8 @@ const drawChart = async (currency) => {
     try {
         const reqChart = await fetch(`${urlApi}/${currency}`);
         const dataChart = await reqChart.json();
-
-
-        // Probe con todos los meses jeje
-
         const data = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
                 {
                     label: 'Currency',
