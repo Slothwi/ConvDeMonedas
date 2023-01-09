@@ -1,5 +1,5 @@
 const urlApi = `https://mindicador.cl/api`;
-const filterCurrencies = ['dolar', 'euro', 'utm'];
+const filterCurrencies = ['dolar', 'euro', 'utm', 'uf'];
 const selectWithCurrencies = document.querySelector('#currency');
 const divResult = document.querySelector('#result');
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
